@@ -1,0 +1,21 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : null,
+      "usersFilter" : {
+        "type" : "ORIGINATOR_ENTITY_OWNER_USERS"
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "373927b0-b43e-11f0-a3c5-ebbe27b0b05d"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "373927b0-b43e-11f0-a3c5-ebbe27b0b05d"
+    },
+    "name" : "notificaciones humedad fuera de limites"
+  }
+}

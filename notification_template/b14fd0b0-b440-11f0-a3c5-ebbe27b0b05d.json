@@ -1,0 +1,46 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "notifications",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "Ir al mapa",
+              "linkType" : "DASHBOARD",
+              "dashboardId" : "e2d80e20-a00b-11f0-8ada-cb2dc6e9b0fb",
+              "dashboardState" : "mapa",
+              "setEntityIdInState" : true
+            }
+          },
+          "body" : "La humedad en un sensor ha salido de los limites configurados",
+          "enabled" : true,
+          "subject" : "Humedad fuera de limite"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>${alarmOriginatorLabel}</p>",
+          "enabled" : true,
+          "subject" : "Humedad fuera de limite"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "b14fd0b0-b440-11f0-a3c5-ebbe27b0b05d"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "b14fd0b0-b440-11f0-a3c5-ebbe27b0b05d"
+    },
+    "name" : "notificaciones humedad fuera de limites test",
+    "notificationType" : "GENERAL"
+  }
+}

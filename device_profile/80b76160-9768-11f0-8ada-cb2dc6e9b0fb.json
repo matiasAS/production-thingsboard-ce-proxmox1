@@ -1,0 +1,57 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "697b7cb0-980e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "80b76160-9768-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "80b76160-9768-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "image" : null,
+    "name" : "Sensor-11",
+    "profileData" : {
+      "alarms" : [ ],
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "MQTT",
+        "deviceAttributesSubscribeTopic" : "v1/devices/me/attributes",
+        "deviceAttributesTopic" : "v1/devices/me/attributes",
+        "deviceTelemetryTopic" : "v1/devices/me/telemetry/abc",
+        "sendAckOnValidationException" : false,
+        "sparkplug" : false,
+        "sparkplugAttributesMetricNames" : [ "Properties/*", "Device Control/*", "Node Control/*" ],
+        "transportPayloadTypeConfiguration" : {
+          "transportPayloadType" : "JSON"
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "MQTT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,583 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "MAP - CREATE ZONES",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "23c034e3-9959-c130-e490-24f76d16f1bf" : {
+          "typeFullFqn" : "system.map",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758386043908,
+                  "endTimeMs" : 1758472443908
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.roadmap}",
+                "provider" : "openstreet",
+                "layerType" : "OpenStreetMap.Mapnik",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "OpenStreetMap.Mapnik",
+                "referenceLayer" : null
+              }, {
+                "label" : "{i18n:widgets.maps.layer.hybrid}",
+                "provider" : "openstreet",
+                "layerType" : "OpenStreetMap.Mapnik",
+                "referenceLayer" : "openstreetmap_hybrid"
+              } ],
+              "imageSource" : {
+                "sourceType" : "image",
+                "url" : "data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwIiB3aWR0aD0iMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOTUyLjM2KSI+CiAgPHJlY3QgaWQ9InJlY3Q0Njg0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9Ijk5LjAxIiB3aWR0aD0iOTkuMDEiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSI5NTIuODYiIHg9Ii40OTUwNSIgc3Ryb2tlLXdpZHRoPSIuOTkwMTAiIGZpbGw9IiNlZWUiLz4KICA8dGV4dCBpZD0idGV4dDQ2ODYiIHN0eWxlPSJ3b3JkLXNwYWNpbmc6MHB4O2xldHRlci1zcGFjaW5nOjBweDt0ZXh0LWFuY2hvcjptaWRkbGU7dGV4dC1hbGlnbjpjZW50ZXIiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LXNpemU9IjEwcHgiIGxpbmUtaGVpZ2h0PSIxMjUlIiB5PSI5NzAuNzI4MDkiIHg9IjQ5LjM5NjQ3NyIgZm9udC1mYW1pbHk9IlJvYm90byIgZmlsbD0iIzY2NjY2NiI+PHRzcGFuIGlkPSJ0c3BhbjQ2OTAiIHg9IjUwLjY0NjQ3NyIgeT0iOTcwLjcyODA5Ij5JbWFnZSBiYWNrZ3JvdW5kIDwvdHNwYW4+PHRzcGFuIGlkPSJ0c3BhbjQ2OTIiIHg9IjQ5LjM5NjQ3NyIgeT0iOTgzLjIyODA5Ij5pcyBub3QgY29uZmlndXJlZDwvdHNwYW4+PC90ZXh0PgogIDxyZWN0IGlkPSJyZWN0NDY5NCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgaGVpZ2h0PSIxOS4zNiIgd2lkdGg9IjY5LjM2IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgeT0iOTkyLjY4IiB4PSIxNS4zMiIgc3Ryb2tlLXdpZHRoPSIuNjM5ODYiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+Cg=="
+              },
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "d6cebfe9-67c4-bfc4-ee53-e636be94bd87",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : [ {
+                  "name" : "humidity",
+                  "type" : "timeseries",
+                  "label" : "humidity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9130147759077056
+                }, {
+                  "name" : "electrical_conductivity",
+                  "type" : "timeseries",
+                  "label" : "electrical_conductivity",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.7699471756770938
+                }, {
+                  "name" : "temperature",
+                  "type" : "timeseries",
+                  "label" : "temperature",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.9045538909512147
+                }, {
+                  "name" : "battery",
+                  "type" : "timeseries",
+                  "label" : "battery",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.36182182942105756
+                } ],
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "<div style=\"position:relative; white-space:nowrap; text-align:center; font-size:12px; top:2px;\">\n  <span style=\"margin-left:-500%;\"></span>\n  <div style=\"border:2px solid #EC9704; border-radius:10px; color:#000; background:#fff; padding:3px 8px; line-height:1.25;\">\n    <div style=\"font-size:14px; font-weight:700; margin-bottom:2px;\">${entityName}</div>\n    <div style=\"font-size:12px;\">\n      Humedad: ${humidity:3} %<br/>\n      C.E.: ${electrical_conductivity:3} mS<br/>\n      T: ${temperature:3} °C<br/><br/>\n      Batería: ${battery:2} %\n    </div>\n  </div>\n</div>",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : null,
+                  "tagActions" : [ ]
+                },
+                "click" : {
+                  "type" : "openDashboardState",
+                  "targetDashboardStateId" : "detalle-punto",
+                  "setEntityId" : true,
+                  "stateEntityParamName" : null,
+                  "openRightLayout" : false,
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ "move" ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : true
+                },
+                "xKey" : {
+                  "name" : "latitude",
+                  "label" : "latitude",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "label" : "longitude",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3"
+                },
+                "markerType" : "shape",
+                "markerShape" : {
+                  "shape" : "markerShape1",
+                  "size" : 34,
+                  "color" : {
+                    "type" : "range",
+                    "color" : "#307FE5",
+                    "rangeKey" : {
+                      "name" : "humidity",
+                      "type" : "timeseries",
+                      "label" : "humidity",
+                      "color" : "#2196f3",
+                      "settings" : { },
+                      "_hash" : 0.8193256283427232
+                    },
+                    "range" : [ {
+                      "from" : 0,
+                      "to" : 15,
+                      "color" : "rgba(242, 6, 6, 0.87)"
+                    }, {
+                      "from" : 15,
+                      "to" : 25,
+                      "color" : "rgba(243, 223, 7, 0.87)"
+                    }, {
+                      "from" : 25,
+                      "to" : 50,
+                      "color" : "rgba(28, 248, 14, 0.87)"
+                    } ],
+                    "colorFunction" : null
+                  }
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "image",
+                  "image" : "/assets/markers/shape1.svg",
+                  "imageSize" : 34
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                }
+              } ],
+              "polygons" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : null,
+                "dsEntityAliasId" : "93be9f15-8838-741d-50f1-982632b849cc",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "<div style=\"position:relative; white-space:nowrap; text-align:center; font-size:12px; top:2px;\">\n  <span style=\"margin-left:-500%;\"></span>\n  <div style=\"border:2px solid #EC9704; border-radius:10px; color:#000; background:#fff; padding:3px 8px; line-height:1.25;\">\n    <div style=\"font-size:14px; font-weight:700; margin-bottom:2px;\">${entityName}</div>\n  </div>\n</div>",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : false,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+                  "offsetX" : 0,
+                  "offsetY" : -1,
+                  "patternFunction" : null,
+                  "tagActions" : null
+                },
+                "click" : {
+                  "type" : "openDashboardState",
+                  "targetDashboardStateId" : "detalle_zona",
+                  "setEntityId" : true,
+                  "stateEntityParamName" : null,
+                  "openRightLayout" : false,
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ "edit", "move", "remove" ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : true
+                },
+                "fillType" : "color",
+                "fillColor" : {
+                  "type" : "constant",
+                  "color" : "rgba(51,136,255,0.2)"
+                },
+                "fillStripe" : {
+                  "weight" : 3,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#8f8f8f"
+                  },
+                  "spaceWeight" : 9,
+                  "spaceColor" : {
+                    "type" : "constant",
+                    "color" : "rgba(143,143,143,0)"
+                  },
+                  "angle" : 45
+                },
+                "fillImage" : {
+                  "type" : "image",
+                  "image" : "/assets/widget-preview-empty.svg",
+                  "preserveAspectRatio" : true,
+                  "opacity" : 1,
+                  "angle" : 0,
+                  "scale" : 1
+                },
+                "strokeColor" : {
+                  "type" : "constant",
+                  "color" : "#FF2800",
+                  "rangeKey" : null,
+                  "range" : null,
+                  "colorFunction" : null
+                },
+                "strokeWeight" : 3,
+                "polygonKey" : {
+                  "name" : "perimeter",
+                  "label" : "perimeter",
+                  "type" : "attribute",
+                  "settings" : { },
+                  "color" : "#2196f3",
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                }
+              } ],
+              "circles" : [ ],
+              "additionalDataSources" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dataKeys" : [ {
+                  "name" : "name",
+                  "type" : "entityField",
+                  "label" : "mpName",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "_hash" : 0.22310652180231305,
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                } ],
+                "dsEntityAliasId" : "d6cebfe9-67c4-bfc4-ee53-e636be94bd87"
+              } ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : 20,
+              "mapPageSize" : 16384,
+              "mapActionButtons" : [ {
+                "label" : "ADD ZONE 2",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<!--========================================================================-->\n<!--=========================  Add entity example  =========================-->\n<!--========================================================================-->\n\n<form #addEntityForm=\"ngForm\" [formGroup]=\"addEntityFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 552px\">\n    <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n        <h2>Add entity</h2>\n        <span class=\"flex-1\"></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Name</mat-label>\n                <input matInput formControlName=\"entityName\" required>\n                <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n                    Entity name is required.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Label</mat-label>\n                <input matInput formControlName=\"entityLabel\" >\n            </mat-form-field>\n        </div>\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <tb-entity-type-select\n                    class=\"mat-block flex-1\"\n                    formControlName=\"entityType\"\n                    [showLabel]=\"true\"\n                    [appearance]=\"'outline'\"\n                    [allowedEntityTypes]=\"allowedEntityTypes\"\n            ></tb-entity-type-select>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n        </div>\n        <div formGroupName=\"attributes\" class=\"flex flex-col\">\n            <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Address</mat-label>\n                    <input matInput formControlName=\"address\">\n                </mat-form-field>\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Owner</mat-label>\n                    <input matInput formControlName=\"owner\">\n                </mat-form-field>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addEntityForm.invalid || !addEntityForm.dirty\">\n            Create\n        </button>\n    </div>\n</form>\n",
+                  "customCss" : "",
+                  "customFunction" : "/*========================================================================*/\n/*=========================  Add entity example  =========================*/\n/*========================================================================*/\n\nlet $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n    console.log('HOLA MUNDO');\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n\n    vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n    vm.addEntityFormGroup = vm.fb.group({\n     entityName: ['', [vm.validators.required]],\n     entityType: ['DEVICE'],\n     entityLabel: [null],\n     type: ['', [vm.validators.required]],\n     attributes: vm.fb.group({\n         address: [null],\n         owner: [null]\n     })\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        vm.addEntityFormGroup.markAsPristine();\n        saveEntityObservable().pipe(\n            widgetContext.rxjs.switchMap((entity) => saveAttributes(entity.id))\n        ).subscribe(() => {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n\n    function saveEntityObservable() {\n        const formValues = vm.addEntityFormGroup.value;\n        let entity = {\n            name: formValues.entityName,\n            type: formValues.type,\n            label: formValues.entityLabel\n        };\n        if (formValues.entityType == 'ASSET') {\n            return assetService.saveAsset(entity);\n        } else if (formValues.entityType == 'DEVICE') {\n            return deviceService.saveDevice(entity);\n        }\n    }\n\n    function saveAttributes(entityId) {\n        let attributes = vm.addEntityFormGroup.get('attributes').value;\n        let attributesArray = getMapItemLocationAttributes();\n        for (let key in attributes) {\n            if(attributes[key] !== null) {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        }\n        return widgetContext.rxjs.of([]);\n    }\n\n    function getMapItemLocationAttributes() {\n        const attributes = [];\n        const mapItemType = $event.shape;\n        if (mapItemType === 'Marker') {\n            const mapType = widgetContext.mapInstance.type();\n            attributes.push({key: mapType === 'image' ? 'xPos' : 'latitude', value: additionalParams.coordinates.x});\n            attributes.push({key: mapType === 'image' ? 'yPos' : 'longitude', value: additionalParams.coordinates.y});\n        } else if (mapItemType === 'Rectangle' || mapItemType === 'Polygon') {\n            attributes.push({key: 'perimeter', value: additionalParams.coordinates});\n        } else if (mapItemType === 'Circle') {\n            attributes.push({key: 'circle', value: additionalParams.coordinates});\n        }\n        return attributes;\n    }\n}\n",
+                  "customResources" : [ ],
+                  "mapItemType" : "polygon",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "DEEP SEEK",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<form #addEntityForm=\"ngForm\" [formGroup]=\"addEntityFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 552px\">\n    <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n        <h2>Add entity</h2>\n        <span class=\"flex-1\"></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Name</mat-label>\n                <input matInput formControlName=\"entityName\" required>\n                <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n                    Entity name is required.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Label</mat-label>\n                <input matInput formControlName=\"entityLabel\" >\n            </mat-form-field>\n        </div>\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <tb-entity-type-select\n                    class=\"mat-block flex-1\"\n                    formControlName=\"entityType\"\n                    [showLabel]=\"true\"\n                    [appearance]=\"'outline'\"\n                    [allowedEntityTypes]=\"allowedEntityTypes\"\n            ></tb-entity-type-select>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n        </div>\n        \n        <!-- Campo para seleccionar Customer -->\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Customer</mat-label>\n                <mat-select formControlName=\"customerId\">\n                    <mat-option [value]=\"null\">No Customer</mat-option>\n                    <mat-option *ngFor=\"let customer of customers\" [value]=\"customer.id.id\">\n                        {{ customer.title }}\n                    </mat-option>\n                </mat-select>\n            </mat-form-field>\n            <div class=\"flex-1\"></div>\n        </div>\n\n        <div formGroupName=\"attributes\" class=\"flex flex-col\">\n            <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Address</mat-label>\n                    <input matInput formControlName=\"address\">\n                </mat-form-field>\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Owner</mat-label>\n                    <input matInput formControlName=\"owner\">\n                </mat-form-field>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addEntityForm.invalid || !addEntityForm.dirty\">\n            Create\n        </button>\n    </div>\n</form>",
+                  "customCss" : "",
+                  "customFunction" : "/*========================================================================*/\n/*=========================  Add entity example  =========================*/\n/*========================================================================*/\n\nlet $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet customerService = $injector.get(widgetContext.servicesMap.get('customerService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n    vm.customers = [];\n\n    vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n    vm.addEntityFormGroup = vm.fb.group({\n        entityName: ['', [vm.validators.required]],\n        entityType: ['DEVICE'],\n        entityLabel: [null],\n        type: ['', [vm.validators.required]],\n        customerId: [null],\n        attributes: vm.fb.group({\n            address: [null],\n            owner: [null]\n        })\n    });\n\n    // Cargar customers usando el método correcto\n    loadCustomers();\n\n    function loadCustomers() {\n        // Usar el método correcto para obtener customers\n        let customerPageLink = {\n            pageSize: 100,\n            page: 0\n        };\n        \n        customerService.getCustomers(customerPageLink).subscribe(\n            (response) => {\n                vm.customers = response.data;\n            },\n            (error) => {\n                console.error('Error loading customers:', error);\n                vm.customers = [];\n            }\n        );\n    }\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        vm.addEntityFormGroup.markAsPristine();\n        saveEntityObservable().pipe(\n            widgetContext.rxjs.switchMap((entity) => {\n                // Si se seleccionó un customer, asignar la entidad al customer\n                const customerId = vm.addEntityFormGroup.get('customerId').value;\n                const entityType = vm.addEntityFormGroup.get('entityType').value;\n                \n                if (customerId) {\n                    return assignEntityToCustomer(entity.id.id, entityType, customerId).pipe(\n                        widgetContext.rxjs.switchMap(() => saveAttributes(entity.id))\n                    );\n                } else {\n                    return saveAttributes(entity.id);\n                }\n            })\n        ).subscribe(\n            () => {\n                widgetContext.updateAliases();\n                vm.dialogRef.close(null);\n            },\n            (error) => {\n                console.error('Error saving entity:', error);\n            }\n        );\n    };\n\n    function saveEntityObservable() {\n        const formValues = vm.addEntityFormGroup.value;\n        let entity = {\n            name: formValues.entityName,\n            type: formValues.type,\n            label: formValues.entityLabel\n        };\n        \n        if (formValues.entityType == 'ASSET') {\n            return assetService.saveAsset(entity);\n        } else if (formValues.entityType == 'DEVICE') {\n            return deviceService.saveDevice(entity);\n        }\n    }\n\n    function assignEntityToCustomer(entityId, entityType, customerId) {\n        if (entityType === 'ASSET') {\n            return assetService.assignAssetToCustomer(customerId, entityId);\n        } else if (entityType === 'DEVICE') {\n            return deviceService.assignDeviceToCustomer(customerId, entityId);\n        }\n        return widgetContext.rxjs.of(null);\n    }\n\n    function saveAttributes(entityId) {\n        let attributes = vm.addEntityFormGroup.get('attributes').value;\n        let attributesArray = [];\n        \n        for (let key in attributes) {\n            if(attributes[key] !== null && attributes[key] !== '') {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        \n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        }\n        return widgetContext.rxjs.of(null);\n    }\n}",
+                  "customResources" : [ ],
+                  "mapItemType" : "polygon",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "GROK",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<form #addEntityForm=\"ngForm\" [formGroup]=\"addEntityFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 552px\">\n    <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n        <h2>Add entity</h2>\n        <span class=\"flex-1\"></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Name</mat-label>\n                <input matInput formControlName=\"entityName\" required>\n                <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n                    Entity name is required.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Label</mat-label>\n                <input matInput formControlName=\"entityLabel\">\n            </mat-form-field>\n        </div>\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <tb-entity-type-select\n                    class=\"mat-block flex-1\"\n                    formControlName=\"entityType\"\n                    [showLabel]=\"true\"\n                    [appearance]=\"'outline'\"\n                    [allowedEntityTypes]=\"allowedEntityTypes\"\n            ></tb-entity-type-select>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n        </div>\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Customer</mat-label>\n                <input matInput formControlName=\"customerId\" [matAutocomplete]=\"autoCustomer\">\n                <mat-autocomplete #autoCustomer=\"matAutocomplete\" [displayWith]=\"displayCustomerFn\">\n                    <mat-option *ngFor=\"let customer of filteredCustomers | async\" [value]=\"customer\">\n                        {{ customer.title }}\n                    </mat-option>\n                </mat-autocomplete>\n            </mat-form-field>\n        </div>\n        <div formGroupName=\"attributes\" class=\"flex flex-col\">\n            <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Address</mat-label>\n                    <input matInput formControlName=\"address\">\n                </mat-form-field>\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Owner</mat-label>\n                    <input matInput formControlName=\"owner\">\n                </mat-form-field>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addEntityForm.invalid || !addEntityForm.dirty\">\n            Create\n        </button>\n    </div>\n</form>",
+                  "customCss" : "",
+                  "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet customerService = $injector.get(widgetContext.servicesMap.get('customerService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n\n    vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n    vm.addEntityFormGroup = vm.fb.group({\n        entityName: ['', [vm.validators.required]],\n        entityType: ['DEVICE'],\n        entityLabel: [null],\n        type: ['', [vm.validators.required]],\n        customerId: [null],\n        attributes: vm.fb.group({\n            address: [null],\n            owner: [null]\n        })\n    });\n\n    // Customer autocomplete\n    vm.customers = [];\n    vm.filteredCustomers = vm.addEntityFormGroup.get('customerId').valueChanges.pipe(\n        widgetContext.rxjs.startWith(''),\n        widgetContext.rxjs.debounceTime(300),\n        widgetContext.rxjs.switchMap(query => {\n            if (typeof query === 'string' && query.length >= 3) {\n                return customerService.findTenantCustomers({textSearch: query, pageSize: 10, page: 0}).pipe(\n                    widgetContext.rxjs.map(pageData => pageData.data)\n                );\n            }\n            return widgetContext.rxjs.of([]);\n        })\n    );\n\n    vm.displayCustomerFn = function(customer) {\n        return customer ? customer.title : '';\n    };\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        vm.addEntityFormGroup.markAsPristine();\n        saveEntityObservable().pipe(\n            widgetContext.rxjs.switchMap((entity) => saveAttributes(entity.id))\n        ).subscribe(() => {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n\n    function saveEntityObservable() {\n        const formValues = vm.addEntityFormGroup.value;\n        let entity = {\n            name: formValues.entityName,\n            type: formValues.type,\n            label: formValues.entityLabel,\n            customerId: formValues.customerId ? formValues.customerId.id : null\n        };\n        if (formValues.entityType == 'ASSET') {\n            return assetService.saveAsset(entity);\n        } else if (formValues.entityType == 'DEVICE') {\n            return deviceService.saveDevice(entity);\n        }\n    }\n\n    function saveAttributes(entityId) {\n        let attributes = vm.addEntityFormGroup.get('attributes').value;\n        let attributesArray = getMapItemLocationAttributes();\n        for (let key in attributes) {\n            if (attributes[key] !== null) {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        }\n        return widgetContext.rxjs.of([]);\n    }\n\n    function getMapItemLocationAttributes() {\n        const attributes = [];\n        const mapItemType = $event.shape;\n        if (mapItemType === 'Marker') {\n            const mapType = widgetContext.mapInstance.type();\n            attributes.push({key: mapType === 'image' ? 'xPos' : 'latitude', value: additionalParams.coordinates.x});\n            attributes.push({key: mapType === 'image' ? 'yPos' : 'longitude', value: additionalParams.coordinates.y});\n        } else if (mapItemType === 'Rectangle' || mapItemType === 'Polygon') {\n            attributes.push({key: 'perimeter', value: additionalParams.coordinates});\n        } else if (mapItemType === 'Circle') {\n            attributes.push({key: 'circle', value: additionalParams.coordinates});\n        }\n        return attributes;\n    }\n}",
+                  "customResources" : [ ],
+                  "mapItemType" : "polygon",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "ADD ZONE 3",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<!--========================================================================-->\n<!--=========================  Add entity example  =========================-->\n<!--========================================================================-->\n\n<form [formGroup]=\"addEntityFormGroup\" (ngSubmit)=\"save()\" style=\"width: 552px\">\n  <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n    <h2>Add entity</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\"></mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n\n  <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Entity Name</mat-label>\n        <input matInput formControlName=\"entityName\" required>\n        <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n          Entity name is required.\n        </mat-error>\n      </mat-form-field>\n\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Entity Label</mat-label>\n        <input matInput formControlName=\"entityLabel\">\n      </mat-form-field>\n    </div>\n\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <tb-entity-type-select\n        class=\"mat-block flex-1\"\n        formControlName=\"entityType\"\n        [showLabel]=\"true\"\n        [appearance]=\"'outline'\"\n        [allowedEntityTypes]=\"allowedEntityTypes\">\n      </tb-entity-type-select>\n\n      <!-- subtype para ASSET -->\n      <tb-entity-subtype-autocomplete\n        *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n        class=\"mat-block flex-1\"\n        formControlName=\"type\"\n        [required]=\"true\"\n        [entityType]=\"'ASSET'\"\n        [appearance]=\"'outline'\">\n      </tb-entity-subtype-autocomplete>\n\n      <!-- subtype para DEVICE -->\n      <tb-entity-subtype-autocomplete\n        *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n        class=\"mat-block flex-1\"\n        formControlName=\"type\"\n        [required]=\"true\"\n        [entityType]=\"'DEVICE'\"\n        [appearance]=\"'outline'\">\n      </tb-entity-subtype-autocomplete>\n    </div>\n\n    <!-- ********** Customer (mat-autocomplete) ********** -->\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Customer</mat-label>\n        <input type=\"text\"\n               matInput\n               [matAutocomplete]=\"custAuto\"\n               [formControl]=\"addEntityFormGroup.get('customerSearch')\">\n        <mat-autocomplete #custAuto=\"matAutocomplete\"\n                          (optionSelected)=\"customerPicked($event.option.value)\">\n          <mat-option *ngFor=\"let c of customers$ | async\" [value]=\"c\">\n            {{ c.title }}\n          </mat-option>\n        </mat-autocomplete>\n      </mat-form-field>\n    </div>\n    <!-- ********************************************** -->\n\n    <div formGroupName=\"attributes\" class=\"flex flex-col\">\n      <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n        <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n          <mat-label>Address</mat-label>\n          <input matInput formControlName=\"address\">\n        </mat-form-field>\n\n        <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n          <mat-label>Owner</mat-label>\n          <input matInput formControlName=\"owner\">\n        </mat-form-field>\n      </div>\n    </div>\n  </div>\n\n  <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addEntityFormGroup.invalid || !addEntityFormGroup.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
+                  "customCss" : "",
+                  "customFunction" : "/*========================================================================*/\n/*=====================  Add entity example (MINIMAL JS)  =================*/\n/*========================================================================*/\n\nlet $injector        = widgetContext.$scope.$injector;\nlet customDialog     = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService     = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService    = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet customerService  = $injector.get(widgetContext.servicesMap.get('customerService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n  customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n  let vm = instance;\n\n  vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n  vm.addEntityFormGroup = vm.fb.group({\n    entityName: ['', [vm.validators.required]],\n    entityType: ['DEVICE'],\n    entityLabel: [null],\n    type: ['', [vm.validators.required]],\n\n    // Autocomplete que YA tenías\n    customerSearch: [''], // texto mostrado\n    customerId: [null],   // id real para asignar\n\n    attributes: vm.fb.group({\n      address: [null],\n      owner: [null]\n    })\n  });\n\n  // Autocomplete de customers (YA lo tenías)\n  vm.customers$ = vm.addEntityFormGroup.get('customerSearch').valueChanges.pipe(\n    widgetContext.rxjs.startWith(''),\n    widgetContext.rxjs.switchMap((q) => {\n      const pageLink = { pageSize: 10, page: 0, textSearch: q || '' };\n      return customerService.getTenantCustomers(pageLink); // PageData<Customer>\n    }),\n    widgetContext.rxjs.map(res => res && res.data ? res.data : [])\n  );\n\n  // Guardar selección (YA lo tenías)\n  vm.customerPicked = function(cust) {\n    vm.addEntityFormGroup.patchValue({\n      customerId: cust.id.id,\n      customerSearch: cust.title\n    }, { emitEvent: false });\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  vm.save = function() {\n    vm.addEntityFormGroup.markAsPristine();\n\n    saveEntityObservable().pipe(\n      // 1) asignar al customer si se eligió (sin reload)\n      widgetContext.rxjs.switchMap((entity) => assignIfCustomer(entity)),\n      // 2) guardar atributos (usa SOLO el form; sin \"ping\", sin NULL_UUID)\n      widgetContext.rxjs.switchMap((entity) => saveAttributes(entity.id))\n    ).subscribe(() => {\n      widgetContext.updateAliases();\n      vm.dialogRef.close(null);\n    });\n  };\n\n  // ===== Crear entidad (igual que antes) =====\n  function saveEntityObservable() {\n    const v = vm.addEntityFormGroup.value;\n    const entity = {\n      name: v.entityName,\n      type: v.type,\n      label: v.entityLabel\n    };\n    if (v.entityType === 'ASSET') {\n      return assetService.saveAsset(entity);\n    } else {\n      return deviceService.saveDevice(entity);\n    }\n  }\n\n  // ===== Asignar al customer si corresponde (igual lógica, usa form.customerId) =====\n  function assignIfCustomer(entity) {\n    const cid = vm.addEntityFormGroup.get('customerId').value;\n    if (!cid) return widgetContext.rxjs.of(entity);\n    const isAsset = (vm.addEntityFormGroup.get('entityType').value === 'ASSET');\n    const obs = isAsset\n      ? customerService.assignAssetToCustomer(cid, entity.id.id)\n      : customerService.assignDeviceToCustomer(cid, entity.id.id);\n    return obs.pipe(widgetContext.rxjs.map(() => entity));\n  }\n\n  // ===== Guardar atributos (geom + extras + customerId/customerTitle del form) =====\n  function saveAttributes(entityId) {\n    let attributesArray = [];\n\n    // Geometría: usa tu implementación existente (si $event/aditionalParams están disponibles en el scope)\n    attributesArray = attributesArray.concat(getMapItemLocationAttributes());\n\n    // Extras del form\n    const extra = vm.addEntityFormGroup.get('attributes').value || {};\n    for (let key in extra) {\n      const val = extra[key];\n      if (val !== null && val !== '') {\n        attributesArray.push({ key, value: val });\n      }\n    }\n\n    // Customer desde el form (sin reload, sin NULL_UUID)\n    const formCid = vm.addEntityFormGroup.get('customerId').value;\n    if (formCid) {\n      attributesArray.push({ key: 'customerId', value: formCid });\n    }\n    const formCtitle = vm.addEntityFormGroup.get('customerSearch').value;\n    if (formCtitle) {\n      attributesArray.push({ key: 'customerTitle', value: formCtitle });\n    }\n\n    if (attributesArray.length > 0) {\n      return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n    }\n    return widgetContext.rxjs.of([]); // si no hay nada que guardar, no hace llamada\n  }\n\n  // ===== Igual que tu ejemplo original =====\n  function getMapItemLocationAttributes() {\n    const attributes = [];\n    const mapItemType = $event?.shape; // si no existe, simplemente no se agrega nada\n    if (!mapItemType) return attributes;\n\n    if (mapItemType === 'Marker') {\n      const mapType = widgetContext.mapInstance.type();\n      attributes.push({ key: mapType === 'image' ? 'xPos' : 'latitude',  value: additionalParams.coordinates.x });\n      attributes.push({ key: mapType === 'image' ? 'yPos' : 'longitude', value: additionalParams.coordinates.y });\n    } else if (mapItemType === 'Rectangle' || mapItemType === 'Polygon') {\n      attributes.push({ key: 'perimeter', value: additionalParams.coordinates });\n    } else if (mapItemType === 'Circle') {\n      attributes.push({ key: 'circle', value: additionalParams.coordinates });\n    }\n    return attributes;\n  }\n}\n",
+                  "customResources" : [ ],
+                  "mapItemType" : "polygon",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "ADD ZONE 4",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<!--========================================================================-->\n<!--=========================  Add entity example  =========================-->\n<!--========================================================================-->\n\n<form [formGroup]=\"addEntityFormGroup\" (ngSubmit)=\"save()\" style=\"width: 552px\">\n  <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n    <h2>Add entity</h2>\n    <span class=\"flex-1\"></span>\n    <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\"></mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n\n  <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Entity Name</mat-label>\n        <input matInput formControlName=\"entityName\" required>\n        <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n          Entity name is required.\n        </mat-error>\n      </mat-form-field>\n\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Entity Label</mat-label>\n        <input matInput formControlName=\"entityLabel\">\n      </mat-form-field>\n    </div>\n\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <tb-entity-type-select\n        class=\"mat-block flex-1\"\n        formControlName=\"entityType\"\n        [showLabel]=\"true\"\n        [appearance]=\"'outline'\"\n        [allowedEntityTypes]=\"allowedEntityTypes\">\n      </tb-entity-type-select>\n\n      <!-- subtype para ASSET -->\n      <tb-entity-subtype-autocomplete\n        *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n        class=\"mat-block flex-1\"\n        formControlName=\"type\"\n        [required]=\"true\"\n        [entityType]=\"'ASSET'\"\n        [appearance]=\"'outline'\">\n      </tb-entity-subtype-autocomplete>\n\n      <!-- subtype para DEVICE -->\n      <tb-entity-subtype-autocomplete\n        *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n        class=\"mat-block flex-1\"\n        formControlName=\"type\"\n        [required]=\"true\"\n        [entityType]=\"'DEVICE'\"\n        [appearance]=\"'outline'\">\n      </tb-entity-subtype-autocomplete>\n    </div>\n\n    <!-- ********** Customer (mat-autocomplete) ********** -->\n    <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n      <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n        <mat-label>Customer</mat-label>\n        <input type=\"text\"\n               matInput\n               [matAutocomplete]=\"custAuto\"\n               [formControl]=\"addEntityFormGroup.get('customerSearch')\">\n        <mat-autocomplete #custAuto=\"matAutocomplete\"\n                          (optionSelected)=\"customerPicked($event.option.value)\">\n          <mat-option *ngFor=\"let c of customers$ | async\" [value]=\"c\">\n            {{ c.title }}\n          </mat-option>\n        </mat-autocomplete>\n      </mat-form-field>\n    </div>\n    <!-- ********************************************** -->\n\n    <div formGroupName=\"attributes\" class=\"flex flex-col\">\n      <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n        <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n          <mat-label>Address</mat-label>\n          <input matInput formControlName=\"address\">\n        </mat-form-field>\n\n        <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n          <mat-label>Owner</mat-label>\n          <input matInput formControlName=\"owner\">\n        </mat-form-field>\n      </div>\n    </div>\n  </div>\n\n  <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addEntityFormGroup.invalid || !addEntityFormGroup.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
+                  "customCss" : "",
+                  "customFunction" : "/*========================================================================*/\n/*=====================  Add entity example (MINIMAL JS) DEF  =================*/\n/*========================================================================*/\n\nlet $injector        = widgetContext.$scope.$injector;\nlet customDialog     = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService     = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService    = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\nlet customerService  = $injector.get(widgetContext.servicesMap.get('customerService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n  customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n  let vm = instance;\n\n  vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n  vm.addEntityFormGroup = vm.fb.group({\n    entityName: ['', [vm.validators.required]],\n    entityType: ['DEVICE'],\n    entityLabel: [null],\n    type: ['', [vm.validators.required]],\n\n    // Customer (autocomplete)\n    customerSearch: [''], // texto tipeado/mostrado\n    customerId: [null],   // id real si elige opción\n\n    attributes: vm.fb.group({\n      address: [null],\n      owner: [null]\n    })\n  });\n\n  // ---- PageLink shim con toQuery() que INCLUYE \"?\" (evita /api/customerspageSize=...) ----\n  function makePageLink(text) {\n    return {\n      pageSize: 10,\n      page: 0,\n      textSearch: text || '',\n      sortOrder: null,\n      toQuery() {\n        const qs = [];\n        qs.push(`pageSize=${this.pageSize}`);\n        qs.push(`page=${this.page}`);\n        if (this.textSearch) qs.push(`textSearch=${encodeURIComponent(this.textSearch)}`);\n        if (this.sortOrder && this.sortOrder.property) {\n          qs.push(`sortProperty=${encodeURIComponent(this.sortOrder.property)}`);\n          qs.push(`sortOrder=${this.sortOrder.direction || 'ASC'}`);\n        }\n        return '?' + qs.join('&'); // <- clave para tu build\n      }\n    };\n  }\n\n  // ---- SOLO servicios TB (sin HTTP manual) ----\n  function fetchCustomers(pageLink) {\n    if (customerService && typeof customerService.getCustomers === 'function') {\n      return customerService.getCustomers(pageLink);           // CE 4.x\n    } else if (customerService && typeof customerService.getTenantCustomers === 'function') {\n      return customerService.getTenantCustomers(pageLink);     // builds antiguos\n    } else if (customerService && typeof customerService.getCustomerInfos === 'function') {\n      return customerService.getCustomerInfos(pageLink);       // alternativa\n    } else {\n      return widgetContext.rxjs.of({ data: [] });\n    }\n  }\n\n  // ===== Lista para el autocomplete =====\n  vm.customers$ = vm.addEntityFormGroup.get('customerSearch').valueChanges.pipe(\n    widgetContext.rxjs.startWith(''),\n    widgetContext.rxjs.map(v => typeof v === 'string' ? v : (v?.title ?? v?.name ?? '')),\n    widgetContext.rxjs.switchMap(text => fetchCustomers(makePageLink(text))),\n    widgetContext.rxjs.map(res => {\n      if (Array.isArray(res)) return res;\n      if (res && Array.isArray(res.data)) return res.data;\n      return [];\n    })\n  );\n\n  // Texto visible en el input\n  vm.displayCustomer = function(c) {\n    if (!c) return '';\n    if (typeof c === 'string') return c;\n    return c.title ?? c.name ?? '';\n  };\n\n  // Al elegir una opción del panel\n  vm.customerPicked = function(cust) {\n    vm.addEntityFormGroup.patchValue({\n      customerId: cust?.id?.id ?? null,\n      customerSearch: vm.displayCustomer(cust)\n    }, { emitEvent: false });\n  };\n\n  vm.cancel = function() {\n    vm.dialogRef.close(null);\n  };\n\n  vm.save = function() {\n    vm.addEntityFormGroup.markAsPristine();\n\n    saveEntityObservable().pipe(\n      // NO asigna en JS: lo harás en Rule Engine\n      widgetContext.rxjs.switchMap((entity) => saveAttributes(entity.id))\n    ).subscribe(() => {\n      widgetContext.updateAliases();\n      vm.dialogRef.close(null);\n    });\n  };\n\n  // ---- Crear entidad (Asset/Device) ----\n  function saveEntityObservable() {\n    const v = vm.addEntityFormGroup.value;\n    const entity = { name: v.entityName, type: v.type, label: v.entityLabel };\n    return v.entityType === 'ASSET'\n      ? assetService.saveAsset(entity)\n      : deviceService.saveDevice(entity);\n  }\n\n  // ---- Guardar atributos para que el Rule Engine los capture ----\n  function saveAttributes(entityId) {\n    const attrs = [];\n\n    // (A) Siempre guarda lo tipeado en el input\n    const typed = vm.addEntityFormGroup.get('customerSearch').value || '';\n    attrs.push({ key: 'customerSearchText', value: typed });\n    attrs.push({ key: 'custom_event', value: \"ADD_ZONE_FROM_MAP\" });\n    // (B) Si seleccionó, guarda también el ID real\n    const cid = vm.addEntityFormGroup.get('customerId').value;\n    if (cid) attrs.push({ key: 'customerId', value: cid });\n\n    // (C) Geometría desde la acción del mapa (si aplica)\n    attrs.push(...getMapItemLocationAttributes());\n\n    // (D) Extras del formulario\n    const extra = vm.addEntityFormGroup.get('attributes').value || {};\n    Object.keys(extra).forEach(k => {\n      const v = extra[k];\n      if (v !== null && v !== '') attrs.push({ key: k, value: v });\n    });\n\n    if (!attrs.length) return widgetContext.rxjs.of([]); // nada que guardar\n    return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attrs);\n  }\n\n  // ---- Geometría (segura si $event/additionalParams no existen) ----\n  function getMapItemLocationAttributes() {\n    const attributes = [];\n    try {\n      if (typeof $event === 'undefined' || typeof additionalParams === 'undefined') {\n        return attributes;\n      }\n      const mapItemType = $event.shape;\n\n      if (mapItemType === 'Marker') {\n        const mapType = widgetContext.mapInstance.type();\n        attributes.push({ key: mapType === 'image' ? 'xPos' : 'latitude',  value: additionalParams.coordinates.x });\n        attributes.push({ key: mapType === 'image' ? 'yPos' : 'longitude', value: additionalParams.coordinates.y });\n      } else if (mapItemType === 'Rectangle' || mapItemType === 'Polygon') {\n        attributes.push({ key: 'perimeter', value: additionalParams.coordinates });\n      } else if (mapItemType === 'Circle') {\n        attributes.push({ key: 'circle', value: additionalParams.coordinates });\n      }\n    } catch (_) { /* silencioso */ }\n    return attributes;\n  }\n}\n",
+                  "customResources" : [ ],
+                  "mapItemType" : "polygon",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "ADD MARKER",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "placeMapItem",
+                  "customHtml" : "<!--========================================================================-->\n<!--=========================  Add entity example  =========================-->\n<!--========================================================================-->\n\n<form #addEntityForm=\"ngForm\" [formGroup]=\"addEntityFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 552px\">\n    <mat-toolbar class=\"flex flex-row\" color=\"primary\">\n        <h2>Add entity</h2>\n        <span class=\"flex-1\"></span>\n        <button mat-icon-button (click)=\"cancel()\" type=\"button\">\n            <mat-icon class=\"material-icons\">close</mat-icon>\n        </button>\n    </mat-toolbar>\n    <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n    </mat-progress-bar>\n    <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n    <div mat-dialog-content class=\"flex flex-col\" style=\"padding-bottom: 0\">\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Name</mat-label>\n                <input matInput formControlName=\"entityName\" required>\n                <mat-error *ngIf=\"addEntityFormGroup.get('entityName').hasError('required')\">\n                    Entity name is required.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                <mat-label>Entity Label</mat-label>\n                <input matInput formControlName=\"entityLabel\" >\n            </mat-form-field>\n        </div>\n        <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n            <tb-entity-type-select\n                    class=\"mat-block flex-1\"\n                    formControlName=\"entityType\"\n                    [showLabel]=\"true\"\n                    [appearance]=\"'outline'\"\n                    [allowedEntityTypes]=\"allowedEntityTypes\"\n            ></tb-entity-type-select>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value == 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n            <tb-entity-subtype-autocomplete\n                    *ngIf=\"addEntityFormGroup.get('entityType').value != 'ASSET'\"\n                    class=\"mat-block flex-1\"\n                    formControlName=\"type\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                    [appearance]=\"'outline'\"\n            ></tb-entity-subtype-autocomplete>\n        </div>\n        <div formGroupName=\"attributes\" class=\"flex flex-col\">\n            <div class=\"flex flex-row gap-2 xs:flex-col xs:gap-0\">\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Address</mat-label>\n                    <input matInput formControlName=\"address\">\n                </mat-form-field>\n                <mat-form-field class=\"mat-block flex-1\" appearance=\"outline\">\n                    <mat-label>Owner</mat-label>\n                    <input matInput formControlName=\"owner\">\n                </mat-form-field>\n            </div>\n        </div>\n    </div>\n    <div mat-dialog-actions class=\"flex flex-row items-center justify-end\">\n        <button mat-button color=\"primary\"\n                type=\"button\"\n                [disabled]=\"(isLoading$ | async)\"\n                (click)=\"cancel()\" cdkFocusInitial>\n            Cancel\n        </button>\n        <button mat-button mat-raised-button color=\"primary\"\n                type=\"submit\"\n                [disabled]=\"(isLoading$ | async) || addEntityForm.invalid || !addEntityForm.dirty\">\n            Create\n        </button>\n    </div>\n</form>\n",
+                  "customCss" : "",
+                  "customFunction" : "/*========================================================================*/\n/*=========================  Add entity example  =========================*/\n/*========================================================================*/\n\nlet $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddEntityDialog();\n\nfunction openAddEntityDialog() {\n    customDialog.customDialog(htmlTemplate, AddEntityDialogController).subscribe();\n}\n\nfunction AddEntityDialogController(instance) {\n    let vm = instance;\n\n    vm.allowedEntityTypes = ['ASSET', 'DEVICE'];\n\n    vm.addEntityFormGroup = vm.fb.group({\n     entityName: ['', [vm.validators.required]],\n     entityType: ['DEVICE'],\n     entityLabel: [null],\n     type: ['', [vm.validators.required]],\n     attributes: vm.fb.group({\n         address: [null],\n         owner: [null]\n     })\n    });\n\n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n\n    vm.save = function() {\n        vm.addEntityFormGroup.markAsPristine();\n        saveEntityObservable().pipe(\n            widgetContext.rxjs.switchMap((entity) => saveAttributes(entity.id))\n        ).subscribe(() => {\n            widgetContext.updateAliases();\n            vm.dialogRef.close(null);\n        });\n    };\n\n    function saveEntityObservable() {\n        const formValues = vm.addEntityFormGroup.value;\n        let entity = {\n            name: formValues.entityName,\n            type: formValues.type,\n            label: formValues.entityLabel\n        };\n        if (formValues.entityType == 'ASSET') {\n            return assetService.saveAsset(entity);\n        } else if (formValues.entityType == 'DEVICE') {\n            return deviceService.saveDevice(entity);\n        }\n    }\n\n    function saveAttributes(entityId) {\n        let attributes = vm.addEntityFormGroup.get('attributes').value;\n        let attributesArray = getMapItemLocationAttributes();\n        for (let key in attributes) {\n            if(attributes[key] !== null) {\n                attributesArray.push({key: key, value: attributes[key]});\n            }\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        }\n        return widgetContext.rxjs.of([]);\n    }\n\n    function getMapItemLocationAttributes() {\n        const attributes = [];\n        const mapItemType = $event.shape;\n        if (mapItemType === 'Marker') {\n            const mapType = widgetContext.mapInstance.type();\n            attributes.push({key: mapType === 'image' ? 'xPos' : 'latitude', value: additionalParams.coordinates.x});\n            attributes.push({key: mapType === 'image' ? 'yPos' : 'longitude', value: additionalParams.coordinates.y});\n        } else if (mapItemType === 'Rectangle' || mapItemType === 'Polygon') {\n            attributes.push({key: 'perimeter', value: additionalParams.coordinates});\n        } else if (mapItemType === 'Circle') {\n            attributes.push({key: 'circle', value: additionalParams.coordinates});\n        }\n        return attributes;\n    }\n}\n",
+                  "customResources" : [ ],
+                  "mapItemType" : "marker",
+                  "mapItemTooltips" : { },
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                }
+              }, {
+                "label" : "---",
+                "icon" : "add",
+                "color" : "#0000008a",
+                "action" : {
+                  "type" : "doNothing"
+                }
+              } ],
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "8px"
+            },
+            "title" : "Map",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "advanced",
+            "titleFont" : null,
+            "titleColor" : null,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "iconSize" : "24px",
+            "titleIcon" : "map",
+            "iconColor" : "#1F6BDD",
+            "actions" : { }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "23c034e3-9959-c130-e490-24f76d16f1bf"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "MAP - CREATE ZONES",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "23c034e3-9959-c130-e490-24f76d16f1bf" : {
+                  "sizeX" : 14,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "d6cebfe9-67c4-bfc4-ee53-e636be94bd87" : {
+          "id" : "d6cebfe9-67c4-bfc4-ee53-e636be94bd87",
+          "alias" : "Puntos-de-medicion-tierra",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "measurement-point" ],
+            "assetNameFilter" : ""
+          }
+        },
+        "93be9f15-8838-741d-50f1-982632b849cc" : {
+          "id" : "93be9f15-8838-741d-50f1-982632b849cc",
+          "alias" : "zones",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "zones" ],
+            "assetNameFilter" : ""
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1759807556187,
+            "endTimeMs" : 1759893956187
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "MAP - CREATE ZONES",
+    "resources" : null,
+    "assignedCustomers" : [ ],
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "7ff106b0-a3f6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "7ff106b0-a3f6-11f0-8ada-cb2dc6e9b0fb"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

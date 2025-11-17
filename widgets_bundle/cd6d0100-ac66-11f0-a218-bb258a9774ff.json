@@ -1,0 +1,25 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "custom",
+    "description" : "widget personalizados",
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "cd6d0100-ac66-11f0-a218-bb258a9774ff"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "cd6d0100-ac66-11f0-a218-bb258a9774ff"
+    },
+    "image" : null,
+    "name" : "Custom",
+    "order" : null,
+    "scada" : false,
+    "title" : "Custom"
+  },
+  "fqns" : [ "time_series_black_2" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

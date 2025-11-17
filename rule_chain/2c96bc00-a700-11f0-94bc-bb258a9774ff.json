@@ -1,0 +1,32 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "se activa cuando se crea una relacion en el asset measurement point y el asset corresponde a una zone => seteo del atributo zone_name en measurement_point"
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "2c96bc00-a700-11f0-94bc-bb258a9774ff"
+    },
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "2c96bc00-a700-11f0-94bc-bb258a9774ff"
+    },
+    "name" : "on-created-relation-in-asset-measurement-point",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : null,
+    "firstNodeIndex" : null,
+    "nodes" : [ ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

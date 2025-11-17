@@ -1,0 +1,77 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "92de3d10-969f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "label" : "2",
+    "name" : "Santina-Punto-1",
+    "type" : "measurement-point"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c133c440-b5c7-11f0-852a-258683d9c02f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 14685
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "bucket_minutes",
+      "lastUpdateTs" : 1762006056352,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -34.711167,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1758755284630,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -71.216565,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1758755315862,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tittle",
+      "lastUpdateTs" : 1758758002461,
+      "longValue" : null,
+      "strValue" : "Santina-Punto-1"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

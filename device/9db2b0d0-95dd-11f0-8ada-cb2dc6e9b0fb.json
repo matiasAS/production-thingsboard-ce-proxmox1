@@ -1,0 +1,99 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : "",
+      "lastConnectedGateway" : "05a40d30-95d7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a59dcf50-9894-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "9db2b0d0-95dd-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "9db2b0d0-95dd-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "label" : "",
+    "name" : "Moras",
+    "softwareId" : null,
+    "type" : "SDI-12-SENSORS"
+  },
+  "credentials" : {
+    "credentialsId" : "29Kr800GygUGZk4Ol6N8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1759427517384,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "device_identity",
+      "lastUpdateTs" : 1758659014099,
+      "longValue" : null,
+      "strValue" : "MORAS_1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1759427517379,
+      "longValue" : 1759427517379,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1759426871581,
+      "longValue" : 1759426871542,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1758645930855,
+      "longValue" : 1758645930855,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1758645933297,
+      "longValue" : 1758645933297,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,33 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "actionButtonConfig" : {
+              "enabled" : false
+            }
+          },
+          "body" : "Maintenance work is scheduled for tomorrow (7:00 a.m. - 9:00 a.m. UTC)",
+          "enabled" : true,
+          "subject" : "Infrastructure maintenance"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "cd83a540-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "cd83a540-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "name" : "Maintenance work notification",
+    "notificationType" : "GENERAL"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : "Chile",
+    "email" : null,
+    "externalId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "name" : "Agricola San Nicolas",
+    "phone" : null,
+    "state" : null,
+    "title" : "Agricola San Nicolas",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

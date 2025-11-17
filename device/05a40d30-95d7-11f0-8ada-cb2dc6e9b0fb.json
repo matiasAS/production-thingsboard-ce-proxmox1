@@ -1,0 +1,190 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : true,
+      "lastConnectedGateway" : "05a40d30-95d7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9fe59f30-97c6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "05a40d30-95d7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "05a40d30-95d7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "label" : "",
+    "name" : "emqx-bridge",
+    "softwareId" : null,
+    "type" : "emqx-bridge"
+  },
+  "credentials" : {
+    "credentialsId" : "mltsnt0l5ognui0rodc7",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "05a40d30-95d7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "34e20490-c0b0-11f0-8424-233a5c9faced"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 14790
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"mode\":\"basic\",\"name\":\"EMQX\",\"type\":\"mqtt\",\"enableRemoteLogging\":false,\"logLevel\":\"INFO\",\"configuration\":\"emqx.json\",\"configurationJson\":{\"broker\":{\"host\":\"broker.emqx-sistemasmas.cl\",\"port\":21883,\"version\":5,\"clientId\":\"ThingsBoard_gateway_contabo\",\"security\":{\"type\":\"basic\",\"username\":\"uc501\",\"password\":\"uc501\"},\"maxNumberOfWorkers\":100,\"maxMessageNumberPerWorker\":10},\"mapping\":[{\"topicFilter\":\"sensor/data\",\"subscriptionQos\":1,\"converter\":{\"type\":\"json\",\"deviceInfo\":{\"deviceNameExpression\":\"${serialNumber}\",\"deviceNameExpressionSource\":\"message\",\"deviceProfileExpressionSource\":\"message\",\"deviceProfileExpression\":\"${sensorType}\"},\"attributes\":[{\"type\":\"string\",\"key\":\"model\",\"value\":\"${sensorModel}\"},{\"type\":\"string\",\"key\":\"${sensorModel}\",\"value\":\"on\"}],\"timeseries\":[{\"key\":\"temperature\",\"type\":\"string\",\"value\":\"${temperature}\"},{\"key\":\"humidity\",\"type\":\"double\",\"value\":\"${humidity}\"},{\"key\":\"combine\",\"type\":\"string\",\"value\":\"${hum}:${temp}\"},{\"key\":\"deveui\",\"type\":\"string\",\"value\":\"${deveui}\"},{\"key\":\"sdi12_address\",\"type\":\"string\",\"value\":\"${sdi12_address}\"}]}},{\"topicFilter\":\"sensor/+/data\",\"subscriptionQos\":1,\"converter\":{\"type\":\"json\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"topic\",\"deviceNameExpression\":\"(?<=sensor/)(.*?)(?=/data)\",\"deviceProfileExpressionSource\":\"constant\",\"deviceProfileExpression\":\"Thermometer\"},\"attributes\":[{\"key\":\"model\",\"type\":\"string\",\"value\":\"${sensorModel}\"},{\"key\":\"deveui\",\"type\":\"string\",\"value\":\"${deveui}\"},{\"key\":\"sdi12_adddress\",\"type\":\"string\",\"value\":\"${sdi12_adddress}\"}],\"timeseries\":[{\"key\":\"temperature\",\"type\":\"double\",\"value\":\"${temperature}\"},{\"key\":\"humidity\",\"type\":\"double\",\"value\":\"${humidity}\"},{\"key\":\"electrical_conductivity\",\"type\":\"double\",\"value\":\"${electrical_conductivity}\"},{\"key\":\"deveui\",\"type\":\"string\",\"value\":\"${deveui}\"},{\"key\":\"sdi12_address\",\"type\":\"string\",\"value\":\"${sdi12_address}\"}]}},{\"topicFilter\":\"sensor/raw_data\",\"subscriptionQos\":1,\"converter\":{\"type\":\"bytes\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"message\",\"deviceNameExpression\":\"[0:4]\",\"deviceProfileExpressionSource\":\"constant\",\"deviceProfileExpression\":\"default\"},\"sendDataOnlyOnChange\":false,\"timeout\":60000,\"attributes\":[{\"type\":\"raw\",\"key\":\"rawData\",\"value\":\"[:]\"}],\"timeseries\":[{\"type\":\"raw\",\"key\":\"temp\",\"value\":\"[4:]\"}]}},{\"topicFilter\":\"custom/sensors/+\",\"subscriptionQos\":1,\"converter\":{\"type\":\"custom\",\"extension\":\"CustomMqttUplinkConverter\",\"cached\":true,\"extensionConfig\":{\"temperature\":2,\"humidity\":2,\"batteryLevel\":1}}}],\"requestsMapping\":{\"connectRequests\":[{\"topicFilter\":\"sensor/connect\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"message\",\"deviceNameExpression\":\"${serialNumber}\",\"deviceProfileExpressionSource\":\"constant\",\"deviceProfileExpression\":\"Thermometer\"}},{\"topicFilter\":\"sensor/+/connect\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"topic\",\"deviceNameExpression\":\"(?<=sensor/)(.*?)(?=/connect)\",\"deviceProfileExpressionSource\":\"constant\",\"deviceProfileExpression\":\"Thermometer\"}}],\"disconnectRequests\":[{\"topicFilter\":\"sensor/disconnect\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"message\",\"deviceNameExpression\":\"${serialNumber}\"}},{\"topicFilter\":\"sensor/+/disconnect\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"topic\",\"deviceNameExpression\":\"(?<=sensor/)(.*?)(?=/connect)\"}}],\"attributeRequests\":[{\"retain\":false,\"topicFilter\":\"v1/devices/me/attributes/request\",\"deviceInfo\":{\"deviceNameExpressionSource\":\"message\",\"deviceNameExpression\":\"${serialNumber}\"},\"attributeNameExpressionSource\":\"message\",\"attributeNameExpression\":\"${versionAttribute}, ${pduAttribute}\",\"topicExpression\":\"devices/${deviceName}/attrs\",\"valueExpression\":\"${attributeKey}: ${attributeValue}\"}],\"attributeUpdates\":[{\"retain\":true,\"deviceNameFilter\":\".*\",\"attributeFilter\":\"firmwareVersion\",\"topicExpression\":\"sensor/${deviceName}/${attributeKey}\",\"valueExpression\":\"{\\\"${attributeKey}\\\":\\\"${attributeValue}\\\"}\"}],\"serverSideRpc\":[{\"type\":\"twoWay\",\"deviceNameFilter\":\".*\",\"methodFilter\":\"echo\",\"requestTopicExpression\":\"sensor/${deviceName}/request/${methodName}/${requestId}\",\"responseTopicExpression\":\"sensor/${deviceName}/response/${methodName}/${requestId}\",\"responseTopicQoS\":1,\"responseTimeout\":10000,\"valueExpression\":\"${params}\"},{\"type\":\"oneWay\",\"deviceNameFilter\":\".*\",\"methodFilter\":\"no-reply\",\"requestTopicExpression\":\"sensor/${deviceName}/request/${methodName}/${requestId}\",\"valueExpression\":\"${params}\"}]},\"logLevel\":\"INFO\",\"name\":\"EMQX\",\"enableRemoteLogging\":false,\"id\":\"df7b4575-8e53-4f81-8faa-2fd79a190616\",\"configVersion\":\"3.7.7\"},\"configVersion\":\"3.7.7\",\"ts\":1760235172118}",
+      "key" : "EMQX",
+      "lastUpdateTs" : 1760235173071,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1762997085047,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"type\":\"custom\",\"name\":\"custom\",\"logLevel\":\"INFO\",\"useDefaults\":false,\"sendDataOnlyOnChange\":false,\"class\":\"\",\"configurationJson\":{\"logLevel\":\"INFO\",\"name\":\"custom\",\"enableRemoteLogging\":false,\"id\":\"d3bef0b9-7509-41e8-a36e-ca9d3dc16f83\",\"configVersion\":\"3.7.7\"},\"configVersion\":\"3.7.7\",\"configuration\":\"custom.json\",\"ts\":1758564082991}",
+      "key" : "custom",
+      "lastUpdateTs" : 1758564083699,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[\"custom\",\"EMQX\"]",
+      "key" : "inactive_connectors",
+      "lastUpdateTs" : 1760235173026,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1762930447470,
+      "longValue" : 1762930447470,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1763394469335,
+      "longValue" : 1763394467537,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1763363711280,
+      "longValue" : 1763363711280,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1763153873243,
+      "longValue" : 1763153873243,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "RemoteLoggingLevel",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : "NONE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[\"rs485\"]",
+      "key" : "active_connectors",
+      "lastUpdateTs" : 1760235173020,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"host\":\"host.docker.internal\",\"port\":1883,\"remoteShell\":false,\"remoteConfiguration\":true,\"checkConnectorsConfigurationInSeconds\":60,\"statistics\":{\"enable\":true,\"enableCustom\":false,\"statsSendPeriodInSeconds\":3600,\"customStatsSendPeriodInSeconds\":3600,\"commands\":[]},\"maxPayloadSizeBytes\":8196,\"minPackSendDelayMS\":50,\"minPackSizeToSend\":500,\"handleDeviceRenaming\":true,\"checkingDeviceActivity\":{\"checkDeviceInactivity\":false,\"inactivityTimeoutSeconds\":300,\"inactivityCheckPeriodSeconds\":10},\"security\":{\"type\":\"accessToken\",\"accessToken\":\"5TnIStinlfe4VZwoIIad\"},\"qos\":1,\"reportStrategy\":{\"type\":\"ON_RECEIVED\",\"reportPeriod\":10000,\"ttl\":86400},\"ts\":1758342561777}",
+      "key" : "general_configuration",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"enabled\":false,\"serverPort\":9595,\"keepAliveTimeMs\":10001,\"keepAliveTimeoutMs\":5000,\"keepAlivePermitWithoutCalls\":true,\"maxPingsWithoutData\":0,\"minTimeBetweenPingsMs\":10000,\"minPingIntervalWithoutDataMs\":5000,\"ts\":1758342561777}",
+      "key" : "grpc_configuration",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"version\":1,\"disable_existing_loggers\":false,\"formatters\":{\"LogFormatter\":{\"class\":\"logging.Formatter\",\"format\":\"%(asctime)s.%(msecs)03d - |%(levelname)s| - [%(filename)s] - %(module)s - %(funcName)s - %(lineno)d - %(message)s\",\"datefmt\":\"%Y-%m-%d %H:%M:%S\"}},\"handlers\":{\"consoleHandler\":{\"class\":\"logging.StreamHandler\",\"formatter\":\"LogFormatter\",\"level\":0,\"stream\":\"ext://sys.stdout\"},\"serviceHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/service.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"},\"connectorHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/connector.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"},\"converterHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/converter.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"},\"tb_connectionHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/tb_connection.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"},\"storageHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/storage.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"},\"extensionHandler\":{\"class\":\"thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler\",\"formatter\":\"LogFormatter\",\"filename\":\"./logs/extension.log\",\"backupCount\":7,\"interval\":3,\"when\":\"D\",\"encoding\":\"utf-8\"}},\"loggers\":{\"service\":{\"handlers\":[\"serviceHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false},\"connector\":{\"handlers\":[\"connectorHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false},\"converter\":{\"handlers\":[\"converterHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false},\"tb_connection\":{\"handlers\":[\"tb_connectionHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false},\"storage\":{\"handlers\":[\"storageHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false},\"extension\":{\"handlers\":[\"extensionHandler\",\"consoleHandler\"],\"level\":\"INFO\",\"propagate\":false}},\"root\":{\"level\":\"ERROR\",\"handlers\":[\"consoleHandler\"]},\"ts\":1758342561777}",
+      "key" : "logs_configuration",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mode",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : "basic"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"type\":\"modbus\",\"name\":\"rs485\",\"logLevel\":\"INFO\",\"useDefaults\":true,\"sendDataOnlyOnChange\":false,\"configVersion\":\"3.7.7\",\"configurationJson\":{\"master\":{\"slaves\":[{\"host\":\"127.0.0.1\",\"port\":5021,\"type\":\"tcp\",\"method\":\"socket\",\"timeout\":35,\"byteOrder\":\"LITTLE\",\"wordOrder\":\"LITTLE\",\"retries\":true,\"retryOnEmpty\":true,\"retryOnInvalid\":true,\"pollPeriod\":5000,\"unitId\":1,\"deviceName\":\"Temp Sensor\",\"deviceType\":\"default\",\"connectAttemptTimeMs\":5000,\"connectAttemptCount\":5,\"waitAfterFailedAttemptsMs\":300000,\"reportStrategy\":{\"type\":\"ON_REPORT_PERIOD\",\"reportPeriod\":30000},\"attributes\":[{\"tag\":\"string_read\",\"type\":\"string\",\"functionCode\":4,\"objectsCount\":4,\"address\":1,\"reportStrategy\":{\"type\":\"ON_REPORT_PERIOD\",\"reportPeriod\":15000}},{\"tag\":\"bits_read\",\"type\":\"bits\",\"functionCode\":4,\"objectsCount\":1,\"address\":5},{\"tag\":\"8int_read\",\"type\":\"8int\",\"functionCode\":4,\"objectsCount\":1,\"address\":6},{\"tag\":\"16int_read\",\"type\":\"16int\",\"functionCode\":4,\"objectsCount\":1,\"address\":7},{\"tag\":\"32int_read_divider\",\"type\":\"32int\",\"functionCode\":4,\"objectsCount\":2,\"address\":8,\"divider\":10},{\"tag\":\"8int_read_multiplier\",\"type\":\"8int\",\"functionCode\":4,\"objectsCount\":1,\"address\":10,\"multiplier\":10},{\"tag\":\"32int_read\",\"type\":\"32int\",\"functionCode\":4,\"objectsCount\":2,\"address\":11},{\"tag\":\"64int_read\",\"type\":\"64int\",\"functionCode\":4,\"objectsCount\":4,\"address\":13}],\"timeseries\":[{\"tag\":\"8uint_read\",\"type\":\"8uint\",\"functionCode\":4,\"objectsCount\":1,\"address\":17,\"reportStrategy\":{\"type\":\"ON_REPORT_PERIOD\",\"reportPeriod\":15000}},{\"tag\":\"16uint_read\",\"type\":\"16uint\",\"functionCode\":4,\"objectsCount\":2,\"address\":18},{\"tag\":\"32uint_read\",\"type\":\"32uint\",\"functionCode\":4,\"objectsCount\":4,\"address\":20},{\"tag\":\"64uint_read\",\"type\":\"64uint\",\"functionCode\":4,\"objectsCount\":1,\"address\":24},{\"tag\":\"16float_read\",\"type\":\"16float\",\"functionCode\":4,\"objectsCount\":1,\"address\":25},{\"tag\":\"32float_read\",\"type\":\"32float\",\"functionCode\":4,\"objectsCount\":2,\"address\":26},{\"tag\":\"64float_read\",\"type\":\"64float\",\"functionCode\":4,\"objectsCount\":4,\"address\":28}],\"attributeUpdates\":[{\"tag\":\"shared_attribute_write\",\"type\":\"32int\",\"functionCode\":6,\"objectsCount\":2,\"address\":29}],\"rpc\":[{\"tag\":\"setValue\",\"type\":\"bits\",\"functionCode\":5,\"objectsCount\":1,\"address\":31},{\"tag\":\"getValue\",\"type\":\"bits\",\"functionCode\":1,\"objectsCount\":1,\"address\":31},{\"tag\":\"setCPUFanSpeed\",\"type\":\"32int\",\"functionCode\":16,\"objectsCount\":2,\"address\":33},{\"tag\":\"getCPULoad\",\"type\":\"32int\",\"functionCode\":4,\"objectsCount\":2,\"address\":35}]}]},\"slave\":{\"type\":\"tcp\",\"host\":\"127.0.0.1\",\"port\":5026,\"method\":\"socket\",\"deviceName\":\"Modbus Slave Example\",\"deviceType\":\"default\",\"pollPeriod\":5000,\"sendDataToThingsBoard\":false,\"byteOrder\":\"LITTLE\",\"wordOrder\":\"LITTLE\",\"unitId\":0,\"values\":{\"holding_registers\":{\"attributes\":[{\"address\":1,\"type\":\"string\",\"tag\":\"sm\",\"objectsCount\":1,\"value\":\"ON\"}],\"timeseries\":[{\"address\":2,\"type\":\"8int\",\"tag\":\"smm\",\"objectsCount\":1,\"value\":\"12334\"}],\"attributeUpdates\":[{\"tag\":\"shared_attribute_write\",\"type\":\"32int\",\"functionCode\":6,\"objectsCount\":2,\"address\":29,\"value\":1243}],\"rpc\":[{\"tag\":\"setValue\",\"type\":\"bits\",\"functionCode\":5,\"objectsCount\":1,\"address\":31,\"value\":1}]},\"coils_initializer\":{\"attributes\":[{\"address\":5,\"type\":\"8int\",\"tag\":\"coil\",\"objectsCount\":1,\"value\":0}],\"timeseries\":[],\"attributeUpdates\":[],\"rpc\":[]}}}},\"configuration\":\"rs485.json\",\"ts\":1758723058670}",
+      "key" : "rs485",
+      "lastUpdateTs" : 1758723058824,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"type\":\"memory\",\"read_records_count\":100,\"max_records_count\":100000,\"data_folder_path\":\"./data/\",\"max_file_count\":10,\"max_read_records_count\":10,\"max_records_per_file\":10000,\"data_file_path\":\"./data/data.db\",\"messages_ttl_check_in_hours\":1,\"messages_ttl_in_days\":7,\"ts\":1758342561777}",
+      "key" : "storage_configuration",
+      "lastUpdateTs" : 1758342561930,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

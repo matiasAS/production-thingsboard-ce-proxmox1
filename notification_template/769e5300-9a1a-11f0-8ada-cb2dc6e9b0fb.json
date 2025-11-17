@@ -1,0 +1,37 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "el usuario customer ha cambiado la configuraicon de un device",
+          "enabled" : true,
+          "subject" : "cambio de configuracion por usuario"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>&nbsp;<code>${recipientFirstName} ${recipientLastName} ha cambiado la configuraci&oacute;n del device</code>:</p>\n<p><code>${originatorName}</code></p>\n<p><code>Detalle:</code></p>\n<p><code>${fullMsg}</code></p>",
+          "enabled" : true,
+          "subject" : "Se ha modificado la configuración del dispositivo ${originatorName}"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "769e5300-9a1a-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "769e5300-9a1a-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "name" : "change-device-configuration",
+    "notificationType" : "RULE_NODE"
+  }
+}
