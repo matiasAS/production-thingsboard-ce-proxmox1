@@ -19,7 +19,7 @@
           "method" : "EMAIL",
           "body" : "<p>${entityType} '${entityName}' was ${actionType} by user ${userEmail}</p>",
           "enabled" : true,
-          "subject" : "actividad sobre entidad - contabo"
+          "subject" : "producción proxmox1 - actividad sobre entidad"
         }
       }
     },
