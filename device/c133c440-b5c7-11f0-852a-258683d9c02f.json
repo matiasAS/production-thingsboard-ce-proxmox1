@@ -1,0 +1,208 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : "",
+      "lastConnectedGateway" : "49ee3610-bf5c-11f0-94e0-233a5c9faced"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "254520f0-a231-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "c133c440-b5c7-11f0-852a-258683d9c02f"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c133c440-b5c7-11f0-852a-258683d9c02f"
+    },
+    "label" : "Dragino-1-Santina",
+    "name" : "Dragino-1-Santina",
+    "softwareId" : null,
+    "type" : "SOIL-PROBE-60cm"
+  },
+  "credentials" : {
+    "credentialsId" : "N7SHQ5yExTuAFRH6yPJ0",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c133c440-b5c7-11f0-852a-258683d9c02f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 14685
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1763568228884,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deveui",
+      "lastUpdateTs" : 1761853319483,
+      "longValue" : null,
+      "strValue" : "A8404157E1887D96"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "imei",
+      "lastUpdateTs" : 1761853000017,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1763568228882,
+      "longValue" : 1763568228882,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "internal_storage",
+      "lastUpdateTs" : 1763513996304,
+      "longValue" : null,
+      "strValue" : "false"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1763567624588,
+      "longValue" : 1763567621587,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1763567020054,
+      "longValue" : 1763567020054,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1763567621590,
+      "longValue" : 1763567621590,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 2.14285714285714,
+      "jsonValue" : null,
+      "key" : "lower_electrical_conductivity_limit",
+      "lastUpdateTs" : 1762731192413,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 40.4040404040404,
+      "jsonValue" : null,
+      "key" : "lower_humidity_limit",
+      "lastUpdateTs" : 1762731190429,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 8.03607214428858,
+      "jsonValue" : null,
+      "key" : "lower_temperature_limit",
+      "lastUpdateTs" : 1762730899915,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "measurement_point_name",
+      "lastUpdateTs" : 1761940951705,
+      "longValue" : null,
+      "strValue" : "Santina-Punto-1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "profundidad",
+      "lastUpdateTs" : 1761853340791,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sensor_address",
+      "lastUpdateTs" : 1761856003907,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sensor_protocol",
+      "lastUpdateTs" : 1761853329186,
+      "longValue" : null,
+      "strValue" : "SDI12"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 3.06122448979592,
+      "jsonValue" : null,
+      "key" : "upper_electrical_conductivity_limit",
+      "lastUpdateTs" : 1762731198015,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "upper_humidity_limit",
+      "lastUpdateTs" : 1762730905770,
+      "longValue" : 53,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 27.5150300601202,
+      "jsonValue" : null,
+      "key" : "upper_temperature_limit",
+      "lastUpdateTs" : 1762731205225,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
