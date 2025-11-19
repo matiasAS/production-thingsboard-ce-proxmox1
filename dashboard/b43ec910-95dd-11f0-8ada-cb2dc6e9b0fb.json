@@ -757,14 +757,7 @@
     },
     "name" : "Frambuesas",
     "resources" : null,
-    "assignedCustomers" : [ {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "91641510-962f-11f0-8ada-cb2dc6e9b0fb"
-      },
-      "title" : "Agricola San Nicolas",
-      "public" : false
-    } ],
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "b43ec910-95dd-11f0-8ada-cb2dc6e9b0fb"
