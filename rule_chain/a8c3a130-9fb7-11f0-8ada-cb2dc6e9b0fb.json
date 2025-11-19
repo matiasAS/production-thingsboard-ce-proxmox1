@@ -770,7 +770,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "//return ['deveui', 'imei', 'sensor_address'].indexOf(msg.key) !== -1;\nvar allowed = ['deveui', 'imei', 'sensor_address','sensor_protocol'];\n\nvar onlyKey = null;\nfor (var k in msg) {\n  if (Object.prototype.hasOwnProperty.call(msg, k)) {\n    if (onlyKey !== null) { \n      // Tiene más de 1 key → falla\n      return false;\n    }\n    onlyKey = k;\n  }\n}\n\nreturn (onlyKey !== null) && (allowed.indexOf(onlyKey) !== -1);",
+        "jsScript" : "//return ['deveui', 'imei', 'sensor_address'].indexOf(msg.key) !== -1;\nvar allowed = ['deveui', 'imei', 'sensor_address','sensor_protocol','internal_storage'];\n\nvar onlyKey = null;\nfor (var k in msg) {\n  if (Object.prototype.hasOwnProperty.call(msg, k)) {\n    if (onlyKey !== null) { \n      // Tiene más de 1 key → falla\n      return false;\n    }\n    onlyKey = k;\n  }\n}\n\nreturn (onlyKey !== null) && (allowed.indexOf(onlyKey) !== -1);",
         "tbelScript" : "return msg.temperature > 20;"
       },
       "configurationVersion" : 0,
@@ -1581,7 +1581,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17036
+    "version" : 17246
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1594,7 +1594,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17072
+    "version" : 17282
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1607,7 +1607,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17076
+    "version" : 17286
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1620,7 +1620,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17042
+    "version" : 17252
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1633,7 +1633,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17057
+    "version" : 17267
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1646,7 +1646,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17089
+    "version" : 17299
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -1659,9 +1659,10 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17038
+    "version" : 17248
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }
