@@ -33,7 +33,7 @@
       "id" : "c133c440-b5c7-11f0-852a-258683d9c02f"
     },
     "label" : "Dragino-1-Santina",
-    "name" : "A8404157E1887D96_0",
+    "name" : "Dragino-1-Santina",
     "softwareId" : null,
     "type" : "SOIL-PROBE-60cm"
   },
@@ -62,7 +62,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1763567020055,
+      "lastUpdateTs" : 1763570619202,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -86,8 +86,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763564628875,
-      "longValue" : 1763564628875,
+      "lastUpdateTs" : 1763568228882,
+      "longValue" : 1763568228882,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -102,24 +102,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1763567624588,
-      "longValue" : 1763567621587,
+      "lastUpdateTs" : 1763571224589,
+      "longValue" : 1763571221587,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1763567020054,
-      "longValue" : 1763567020054,
+      "lastUpdateTs" : 1763570619202,
+      "longValue" : 1763570619202,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1763567621590,
-      "longValue" : 1763567621590,
+      "lastUpdateTs" : 1763571221590,
+      "longValue" : 1763571221590,
       "strValue" : null
     }, {
       "booleanValue" : null,
