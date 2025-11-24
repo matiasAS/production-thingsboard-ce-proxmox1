@@ -58,11 +58,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1763962922547,
+      "lastUpdateTs" : 1763964165298,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -86,8 +86,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763960565287,
-      "longValue" : 1763960565287,
+      "lastUpdateTs" : 1763964165294,
+      "longValue" : 1763964165294,
       "strValue" : null
     }, {
       "booleanValue" : null,
