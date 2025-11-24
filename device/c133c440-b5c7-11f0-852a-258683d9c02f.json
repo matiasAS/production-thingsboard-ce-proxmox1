@@ -58,11 +58,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1763952125026,
+      "lastUpdateTs" : 1763956605281,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -86,8 +86,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763949765266,
-      "longValue" : 1763949765266,
+      "lastUpdateTs" : 1763956605279,
+      "longValue" : 1763956605279,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -102,24 +102,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1763952728220,
-      "longValue" : 1763952725219,
+      "lastUpdateTs" : 1763955974221,
+      "longValue" : 1763955973465,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1763952125025,
-      "longValue" : 1763952125025,
+      "lastUpdateTs" : 1763955724364,
+      "longValue" : 1763955724364,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1763952725223,
-      "longValue" : 1763952725223,
+      "lastUpdateTs" : 1763955973468,
+      "longValue" : 1763955973468,
       "strValue" : null
     }, {
       "booleanValue" : null,
