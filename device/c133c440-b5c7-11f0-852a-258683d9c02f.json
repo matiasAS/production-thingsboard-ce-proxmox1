@@ -62,7 +62,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1764200460561,
+      "lastUpdateTs" : 1764204059727,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -86,8 +86,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1764198089254,
-      "longValue" : 1764198089254,
+      "lastUpdateTs" : 1764201689262,
+      "longValue" : 1764201689262,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -102,24 +102,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764201064870,
-      "longValue" : 1764201061869,
+      "lastUpdateTs" : 1764204661874,
+      "longValue" : 1764204659969,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1764200460560,
-      "longValue" : 1764200460560,
+      "lastUpdateTs" : 1764204059727,
+      "longValue" : 1764204059727,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1764201061873,
-      "longValue" : 1764201061873,
+      "lastUpdateTs" : 1764204659975,
+      "longValue" : 1764204659975,
       "strValue" : null
     }, {
       "booleanValue" : null,
