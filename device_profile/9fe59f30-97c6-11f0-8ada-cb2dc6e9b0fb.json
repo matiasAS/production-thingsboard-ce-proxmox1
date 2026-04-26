@@ -1,0 +1,48 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a8c3a130-9fb7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9fe59f30-97c6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9fe59f30-97c6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "image" : null,
+    "name" : "emqx-bridge",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

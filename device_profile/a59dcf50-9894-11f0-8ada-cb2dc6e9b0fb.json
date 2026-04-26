@@ -1,0 +1,48 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a8c3a130-9fb7-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "description" : "1 o mas sensores conectados al nodo fisico, distincion por deveui_sdi12_address o el imei si es celular",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a59dcf50-9894-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a59dcf50-9894-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "image" : null,
+    "name" : "SDI-12-SENSORS",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

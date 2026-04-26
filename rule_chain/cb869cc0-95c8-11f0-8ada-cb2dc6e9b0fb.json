@@ -1,0 +1,376 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "cb869cc0-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "cbfabb50-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "cb869cc0-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "name" : "Root Rule Chain",
+    "root" : true,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 5,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 8,
+      "type" : "True"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 7,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 6,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 824,
+        "layoutY" : 156
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758553811355,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf31a30-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 825,
+        "layoutY" : 52
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "CLIENT_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758553541127,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf64e80-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Save Client Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 347,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758940363263,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf738e0-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 825,
+        "layoutY" : 266
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf90da0-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Log RPC from Device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 825,
+        "layoutY" : 379
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760905879248,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf95bc0-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Log Other",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 825,
+        "layoutY" : 468
+      },
+      "configuration" : {
+        "timeoutInSeconds" : 60
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbf9f800-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "RPC Call Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
+        "layoutX" : 204,
+        "layoutY" : 240
+      },
+      "configuration" : {
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760799174197,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cbfabb50-95c8-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "Device Profile Node",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 582,
+        "layoutY" : 676
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1759967298782,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cc84b3f0-9b3b-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "log",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 838,
+        "layoutY" : 626
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "aa38c430-9cc6-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758940065423,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "2b8c7450-9b41-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "set-authority-server-attribute-to-user-after-created",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 465,
+        "layoutY" : 480
+      },
+      "configuration" : {
+        "originatorTypes" : [ "USER" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "cce039f0-9cc6-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "filter-user",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 388,
+        "layoutY" : 570
+      },
+      "configuration" : {
+        "originatorTypes" : [ "DASHBOARD" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761062528598,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "be109fe0-a37f-11f0-8ada-cb2dc6e9b0fb"
+      },
+      "name" : "DASHBOARD",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "cb869cc0-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "aa38c430-9cc6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 14720
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

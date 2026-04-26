@@ -1,0 +1,32 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : null,
+    "externalId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "70a89060-a54f-11f0-94bc-bb258a9774ff"
+    },
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "70a89060-a54f-11f0-94bc-bb258a9774ff"
+    },
+    "name" : "PYME",
+    "phone" : null,
+    "state" : null,
+    "title" : "PYME",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

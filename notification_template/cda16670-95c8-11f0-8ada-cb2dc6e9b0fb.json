@@ -1,0 +1,35 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "person",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : false
+            }
+          },
+          "body" : "${userEmail} assigned alarm on ${alarmOriginatorEntityType} '${alarmOriginatorName}' to ${assigneeEmail}",
+          "enabled" : true,
+          "subject" : "Alarm '${alarmType}' (${alarmSeverity}) was assigned to user"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "cda16670-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "cda16670-95c8-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "name" : "Alarm assigned notification",
+    "notificationType" : "ALARM_ASSIGNMENT"
+  }
+}

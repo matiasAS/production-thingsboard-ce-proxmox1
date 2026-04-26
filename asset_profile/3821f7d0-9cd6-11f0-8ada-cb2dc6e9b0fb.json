@@ -1,0 +1,29 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "27351040-a485-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "description" : "poligonos en el mapa",
+    "externalId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "3821f7d0-9cd6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "3821f7d0-9cd6-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "image" : null,
+    "name" : "zones"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

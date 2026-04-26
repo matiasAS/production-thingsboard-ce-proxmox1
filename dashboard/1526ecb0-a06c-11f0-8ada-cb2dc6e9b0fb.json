@@ -1,0 +1,419 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "test-summary",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "f4c15541-cb4e-ff0e-0e03-1a9a27de6d50" : {
+          "typeFullFqn" : "system.cards.aggregated_value_card",
+          "type" : "timeseries",
+          "sizeX" : 4.5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "4fbe706b-cfec-a923-a28f-17e409f52852",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "settings" : { },
+                "_hash" : 0.41441534187044227,
+                "units" : "%",
+                "decimals" : 0,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              },
+              "latestDataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "Latest",
+                "color" : "#4caf50",
+                "settings" : {
+                  "position" : "center",
+                  "font" : {
+                    "size" : 52,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal",
+                    "lineHeight" : "1"
+                  },
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "rgba(0, 0, 0, 0.87)",
+                    "rangeList" : {
+                      "advancedMode" : false,
+                      "range" : [ ]
+                    },
+                    "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                  },
+                  "showArrow" : false
+                },
+                "_hash" : 0.6790510003083229,
+                "units" : "%",
+                "decimals" : 3,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "Delta percent",
+                "color" : "#f44336",
+                "settings" : {
+                  "position" : "rightTop",
+                  "font" : {
+                    "size" : 14,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal",
+                    "lineHeight" : "20px"
+                  },
+                  "color" : {
+                    "type" : "range",
+                    "color" : "rgba(0, 0, 0, 0.38)",
+                    "rangeList" : {
+                      "advancedMode" : false,
+                      "range" : [ {
+                        "from" : null,
+                        "to" : 0,
+                        "color" : "#198038"
+                      }, {
+                        "from" : 0,
+                        "to" : 0,
+                        "color" : "rgba(0, 0, 0, 0.87)"
+                      }, {
+                        "from" : 0,
+                        "to" : null,
+                        "color" : "#D12730"
+                      } ]
+                    },
+                    "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                  },
+                  "showArrow" : true
+                },
+                "_hash" : 0.9267937402499494,
+                "units" : "%",
+                "decimals" : 3,
+                "aggregationType" : "AVG",
+                "comparisonEnabled" : true,
+                "timeForComparison" : "previousInterval",
+                "comparisonResultType" : "DELTA_PERCENT",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "Delta absolute",
+                "color" : "#ffc107",
+                "settings" : {
+                  "position" : "rightBottom",
+                  "font" : {
+                    "size" : 11,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "400",
+                    "style" : "normal",
+                    "lineHeight" : "16px"
+                  },
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "rgba(0, 0, 0, 0.38)",
+                    "rangeList" : {
+                      "advancedMode" : false,
+                      "range" : [ ]
+                    },
+                    "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                  },
+                  "showArrow" : false
+                },
+                "_hash" : 0.34623874361416385,
+                "units" : "%",
+                "decimals" : 3,
+                "aggregationType" : "AVG",
+                "comparisonEnabled" : true,
+                "timeForComparison" : "previousInterval",
+                "comparisonResultType" : "DELTA_ABSOLUTE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
+            } ],
+            "timewindow" : {
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 2,
+                "quickInterval" : "CURRENT_MONTH_SO_FAR"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "interval" : 43200000,
+                "limit" : 5000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "stack" : false,
+              "fontSize" : 10,
+              "fontColor" : "#545454",
+              "showTooltip" : true,
+              "tooltipIndividual" : false,
+              "tooltipCumulative" : false,
+              "hideZeros" : false,
+              "grid" : {
+                "verticalLines" : true,
+                "horizontalLines" : true,
+                "outlineWidth" : 1,
+                "color" : "#545454",
+                "backgroundColor" : null,
+                "tickColor" : "#DDDDDD"
+              },
+              "xaxis" : {
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454"
+              },
+              "yaxis" : {
+                "min" : null,
+                "max" : null,
+                "title" : null,
+                "showLabels" : true,
+                "color" : "#545454",
+                "tickSize" : null,
+                "tickDecimals" : 0,
+                "ticksFormatter" : ""
+              },
+              "shadowSize" : 4,
+              "smoothLines" : false,
+              "comparisonEnabled" : false,
+              "xaxisSecond" : {
+                "axisPosition" : "top",
+                "title" : null,
+                "showLabels" : true
+              },
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
+              },
+              "customLegendEnabled" : false,
+              "showSubtitle" : true,
+              "subtitle" : "${entityName}",
+              "subtitleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "subtitleColor" : "rgba(0, 0, 0, 0.38)",
+              "showDate" : true,
+              "dateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : true,
+                "custom" : false
+              },
+              "dateFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "dateColor" : "rgba(0, 0, 0, 0.38)",
+              "showChart" : true,
+              "chartColor" : "rgba(0, 0, 0, 0.87)",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "autoScale" : true,
+              "padding" : "18px"
+            },
+            "title" : "Value and chart card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "mobileHeight" : null,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : true,
+            "titleIcon" : "water_drop",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "decimals" : 3,
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : false
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "borderRadius" : null,
+            "units" : "%"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f4c15541-cb4e-ff0e-0e03-1a9a27de6d50"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "test-summary",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "f4c15541-cb4e-ff0e-0e03-1a9a27de6d50" : {
+                  "sizeX" : 4,
+                  "sizeY" : 3,
+                  "mobileHeight" : null,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "4fbe706b-cfec-a923-a28f-17e409f52852" : {
+          "id" : "4fbe706b-cfec-a923-a28f-17e409f52852",
+          "alias" : "Puntos-de-medicion-tierra",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "measurement-point" ],
+            "assetNameFilter" : ""
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1759418253745,
+            "endTimeMs" : 1759504653745
+          },
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideFixedInterval" : false,
+          "hideQuickInterval" : false
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "test-summary",
+    "resources" : null,
+    "assignedCustomers" : [ ],
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "1526ecb0-a06c-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "1526ecb0-a06c-11f0-8ada-cb2dc6e9b0fb"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

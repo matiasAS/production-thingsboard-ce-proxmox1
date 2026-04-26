@@ -1,0 +1,130 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "obtiene desde los atributos servidor del tenant url y token api tb-backend"
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "6dffcc90-a615-11f0-94bc-bb258a9774ff"
+    },
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "c38ebc30-a619-11f0-94bc-bb258a9774ff"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "6dffcc90-a615-11f0-94bc-bb258a9774ff"
+    },
+    "name" : "get-tb-backend-parameters-from-tenant-attributes",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 0,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 310,
+        "layoutY" : 151
+      },
+      "configuration" : {
+        "dataToFetch" : "ATTRIBUTES",
+        "dataMapping" : {
+          "TB_BACKEND_BASE_URL" : "TB_BACKEND_BASE_URL"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c38ebc30-a619-11f0-94bc-bb258a9774ff"
+      },
+      "name" : "get TB_BACKEND_BASE_URL",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTenantAttributeNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 618,
+        "layoutY" : 152
+      },
+      "configuration" : {
+        "dataToFetch" : "ATTRIBUTES",
+        "dataMapping" : {
+          "TB_BACKEND_API_KEY" : "TB_BACKEND_API_KEY"
+        },
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c38fa690-a619-11f0-94bc-bb258a9774ff"
+      },
+      "name" : "get TB_BACKEND_API_KEY",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTenantAttributeNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 926,
+        "layoutY" : 153
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c39042d0-a619-11f0-94bc-bb258a9774ff"
+      },
+      "name" : "output",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainOutputNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "4da90620-a62c-11f0-94bc-bb258a9774ff"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "6dffcc90-a615-11f0-94bc-bb258a9774ff"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 15230
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

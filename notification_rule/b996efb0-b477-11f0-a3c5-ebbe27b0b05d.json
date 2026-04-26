@@ -1,0 +1,35 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : ""
+    },
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "b996efb0-b477-11f0-a3c5-ebbe27b0b05d"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "b996efb0-b477-11f0-a3c5-ebbe27b0b05d"
+    },
+    "name" : "accion en entidad",
+    "recipientsConfig" : {
+      "targets" : [ "cd7d8ac0-95c8-11f0-8ada-cb2dc6e9b0fb" ],
+      "triggerType" : "ENTITY_ACTION"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "6995ac90-b477-11f0-a3c5-ebbe27b0b05d"
+    },
+    "triggerConfig" : {
+      "triggerType" : "ENTITY_ACTION",
+      "created" : true,
+      "deleted" : true,
+      "entityTypes" : [ "DEVICE" ],
+      "updated" : true,
+      "triggerType" : "ENTITY_ACTION"
+    },
+    "triggerType" : "ENTITY_ACTION"
+  }
+}
