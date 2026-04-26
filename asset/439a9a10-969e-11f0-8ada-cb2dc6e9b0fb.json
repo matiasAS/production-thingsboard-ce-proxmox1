@@ -24,20 +24,7 @@
     "name" : "Santina-Punto-2",
     "type" : "measurement-point"
   },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "d4479be0-969d-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "439a9a10-969e-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 14728
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,

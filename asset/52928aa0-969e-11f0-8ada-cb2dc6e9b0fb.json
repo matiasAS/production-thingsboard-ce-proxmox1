@@ -28,6 +28,19 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "ASSET",
+      "id" : "d4479be0-969d-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 18027
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
       "id" : "52928aa0-969e-11f0-8ada-cb2dc6e9b0fb"
     },
     "to" : {
@@ -71,6 +84,14 @@
       "lastUpdateTs" : 1758758002461,
       "longValue" : null,
       "strValue" : "Santina-Punto-1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "zone_name",
+      "lastUpdateTs" : 1768174310016,
+      "longValue" : null,
+      "strValue" : "Santina"
     } ]
   },
   "calculatedFields" : [ ]

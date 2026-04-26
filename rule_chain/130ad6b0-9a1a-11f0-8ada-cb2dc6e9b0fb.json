@@ -392,20 +392,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17267
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "697b7cb0-980e-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "130ad6b0-9a1a-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14743
+    "version" : 17789
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]

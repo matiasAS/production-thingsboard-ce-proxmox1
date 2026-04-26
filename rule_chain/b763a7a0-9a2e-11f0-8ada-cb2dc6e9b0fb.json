@@ -73,7 +73,7 @@
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "8b67c510-9b09-11f0-8ada-cb2dc6e9b0fb"
+        "ruleChainId" : "c2ac9450-bf59-11f0-94e0-233a5c9faced"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -179,7 +179,7 @@
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "bd707480-a25c-11f0-8ada-cb2dc6e9b0fb"
+        "ruleChainId" : "c2b39930-bf59-11f0-94e0-233a5c9faced"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -202,7 +202,7 @@
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "84b5b6f0-a383-11f0-8ada-cb2dc6e9b0fb"
+        "ruleChainId" : "c2abf810-bf59-11f0-94e0-233a5c9faced"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -274,46 +274,7 @@
     } ],
     "ruleChainConnections" : null
   },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "b763a7a0-9a2e-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "84b5b6f0-a383-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14717
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "b763a7a0-9a2e-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "8b67c510-9b09-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14718
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "b763a7a0-9a2e-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "bd707480-a25c-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14719
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }

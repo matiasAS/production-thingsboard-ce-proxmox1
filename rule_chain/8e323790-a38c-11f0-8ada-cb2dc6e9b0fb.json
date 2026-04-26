@@ -91,19 +91,6 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "RULE_CHAIN",
-      "id" : "84b5b6f0-a383-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "8e323790-a38c-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14687
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
       "id" : "a8c3a130-9fb7-11f0-8ada-cb2dc6e9b0fb"
     },
     "to" : {
@@ -112,7 +99,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 17282
+    "version" : 17804
   }, {
     "additionalInfo" : null,
     "from" : {

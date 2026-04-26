@@ -177,7 +177,7 @@
       },
       "configuration" : {
         "forwardMsgToDefaultRuleChain" : false,
-        "ruleChainId" : "bd707480-a25c-11f0-8ada-cb2dc6e9b0fb"
+        "ruleChainId" : "c2b39930-bf59-11f0-94e0-233a5c9faced"
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -995,19 +995,6 @@
     "type" : "Uses",
     "typeGroup" : "COMMON",
     "version" : 14736
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "fc596eb0-a386-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "to" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "bd707480-a25c-11f0-8ada-cb2dc6e9b0fb"
-    },
-    "type" : "Uses",
-    "typeGroup" : "COMMON",
-    "version" : 14737
   }, {
     "additionalInfo" : null,
     "from" : {
